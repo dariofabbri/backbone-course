@@ -2,7 +2,7 @@ define([
 	'jquery',
 	'underscore',
 	'backbone',
-	'app/views/useritemview'
+	'views/useritemview'
 ],
 function ($, _, Backbone, UserItemView) {
 

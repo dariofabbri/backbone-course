@@ -1,9 +1,9 @@
 require.config({
-	baseUrl: 'libs',
+	baseUrl: 'app',
 	paths: {
-		jquery: 'jquery',
-		underscore: 'underscore/underscore',
-		backbone: 'backbone/backbone'
+		jquery: '../libs/jquery',
+		underscore: '../libs/underscore',
+		backbone: '../libs/backbone'
 	},
 	shim: {
 		backbone: {
@@ -14,9 +14,9 @@ require.config({
 });
 
 requirejs([
-	'jquery,
-	'app/collections/users',
-	'app/views/usersview'
+	'jquery',
+	'collections/users',
+	'views/usersview'
 ],
 function ($, Users, UsersView) {
 
